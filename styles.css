@@ -56,8 +56,8 @@ input:focus{
 button{
     border-radius: 100px !important;
 
-    height: 80px;
-    width: 80px;
+    height: 96px;
+    width: 96px;
 
     border: none;
 
@@ -75,7 +75,7 @@ button:hover{
 }
 
 .form-submit{
-    margin-top: -40px;
+    margin-top: -48px;
     width: 100%;
 }
 

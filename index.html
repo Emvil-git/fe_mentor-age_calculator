@@ -12,6 +12,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   
+  <script>
+    const day = document.getElementById("day").value;
+      const month = document.getElementById("month").value;
+      const year = document.getElementById("year").value;
+
+      const getAge = (event) => {
+        event.preventDefault();
+        let dob = new Date(year, month, day);
+        let today = new Date();
+
+        let years = today.getFullYear() - dob.getFullYear();
+
+        document.getElementById("years-val").innerHTML = years;
+      }
+  </script>
+
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
@@ -39,7 +55,7 @@
         </section>
         <section class="d-flex justify-content-end form-submit">
           <hr>
-          <button type="submit">
+          <button onclick="getAge()" id="convert">
             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
               <g fill="none" stroke="#FFF" stroke-width="2">
                 <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
