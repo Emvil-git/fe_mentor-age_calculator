@@ -19,18 +19,18 @@
   <main >
     <div class="p-5">
       <form action="">
-        <section class="row form-inputs pb-5">
-          <section class="d-flex flex-column col-3">
+        <section class="d-flex form-inputs pb-5">
+          <section class="d-flex flex-column col-3 p-0 pe-4">
             <label for="day" class="mb-2">DAY</label>
             <input type="number" name="day" id="day" placeholder="DD" required>
           </section>
           
-          <section class="d-flex flex-column col-3">
+          <section class="d-flex flex-column col-3 p-0 pe-4">
             <label for="month" class="mb-2">MONTH</label>
             <input type="number" name="month" id="month" placeholder="MM" required>
           </section>
 
-          <section class="d-flex flex-column col-3">
+          <section class="d-flex flex-column col-3 p-0 pe-4">
             <label for="year" class="mb-2">YEAR</label>
             <input type="number" name="year" id="year" placeholder="YYYY" required>
           </section>
@@ -50,9 +50,9 @@
       </form>
 
       <section class="d-flex flex-column age-cont">
-        <span class="age-display"><span class="age-val me-2">99</span>years</span>
-        <span class="age-display"><span class="age-val me-2">99</span>months</span>
-        <span class="age-display"><span class="age-val me-2">99</span>days</span>
+        <span class="age-display"><span id="years-val" class="age-val me-2">--</span>years</span>
+        <span class="age-display"><span id="months-val" class="age-val me-2">--</span>months</span>
+        <span class="age-display"><span id="days-val" class="age-val me-2">--</span>days</span>
       </section>
     </div>
   </main>
