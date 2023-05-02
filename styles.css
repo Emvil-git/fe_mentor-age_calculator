@@ -39,9 +39,44 @@ label{
 }
 
 input{
-    font-size: 32px;
+    font-size: 32px !important;
     height: 3rem;
-    padding: 1rem;
+    padding: 32px 1rem;
+    border: 1px solid var(--grey-light);
+    border-radius: 8px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input:focus{
+    border: 1px solid var(--purple) !important;
+}
+
+button{
+    border-radius: 100px !important;
+
+    height: 80px;
+    width: 80px;
+
+    border: none;
+
+    background-color: var(--off-black);
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: var(--purple);
+}
+
+.form-inputs{
+    border-bottom: 1px solid var(--grey-light);
+}
+
+.form-submit{
+    margin-top: -40px;
+    width: 100%;
 }
 
 .age-display{
