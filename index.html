@@ -19,21 +19,23 @@
   <main >
     <div class="p-5">
       <form action="">
-        <section class="d-flex form-inputs">
-          <section class="d-flex flex-column me-4">
+        <section class="row form-inputs">
+          <section class="d-flex flex-column col-3">
             <label for="day" class="mb-2">DAY</label>
-            <input type="number" name="day" id="day">
+            <input type="number" name="day" id="day" placeholder="DD" required>
           </section>
           
-          <section class="d-flex flex-column me-4">
+          <section class="d-flex flex-column col-3">
             <label for="month" class="mb-2">MONTH</label>
-            <input type="number" name="month" id="month">
+            <input type="number" name="month" id="month" placeholder="MM" required>
           </section>
 
-          <section class="d-flex flex-column">
+          <section class="d-flex flex-column col-3">
             <label for="year" class="mb-2">YEAR</label>
-            <input type="number" name="year" id="year">
+            <input type="number" name="year" id="year" placeholder="YYYY" required>
           </section>
+
+          <section class="col-3"></section>
         </section>
         <section class="d-flex form-submit">
           <hr>

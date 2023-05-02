@@ -29,12 +29,19 @@ main{
 div{
     background-color: var(--white);
     border-radius: 1rem 1rem 5rem 1rem;
+    width: 50vw;
 }
 
 label{
     font-size: 12px;
     letter-spacing: 4px;
     color: var(--grey-smoke);
+}
+
+input{
+    font-size: 32px;
+    height: 3rem;
+    padding: 1rem;
 }
 
 .age-display{
