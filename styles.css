@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+
+
+:root{
+    --purple: hsl(259, 100%, 65%);
+    --red-light: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --grey-light: hsl(0, 0%, 86%);
+    --grey-smoke: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    height: 100vh;
+    background-color: var(--off-white);
+
+    display: grid;
+    place-content: center;
+}
+
+div{
+    background-color: var(--white);
+    border-radius: 1rem 1rem 5rem 1rem;
+}
+
+label{
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--grey-smoke);
+}
+
+.age-display{
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 5.5rem;
+}
+
+.age-val{
+    color: var(--purple);
+}
